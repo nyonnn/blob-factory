@@ -46,11 +46,9 @@ class Game():
     def game_finish_screen(self):
         font = pygame.font.SysFont("Montserrat", 50)
 
-        credits = font.render("Credits", True, "white")
-        name = font.render("Maxim", True, "white")
+        credits = font.render("End", True, "white")
         
-        self.display_surface.blit(credits, (WIDTH/2-75, HEIGHT/3))
-        self.display_surface.blit(name, (WIDTH/2-100, HEIGHT/2))
+        self.display_surface.blit(credits, (WIDTH/2 - 30, HEIGHT/2))
 
 # Check if game is finished,  if not add to the level
 
