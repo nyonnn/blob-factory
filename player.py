@@ -33,7 +33,7 @@ class Player(pygame.sprite.Sprite):
                 self.image = pygame.transform.flip(img,True,False)
         else:
             self.image = pygame.image.load('sprites/stand.png')
-
+# Determine direction
     def input(self):
         key = pygame.key.get_pressed()
 
@@ -51,7 +51,7 @@ class Player(pygame.sprite.Sprite):
     def apply_gravity(self):
         self.direction.y += self.gravity
         self.rect.y += self.direction.y  
-
+# Collider detection
     def vertical_movement(self,tile,laser):
         for sprite in tile.sprites():
             if self.rect.colliderect(sprite.rect):
