@@ -1,6 +1,6 @@
 import pygame 
 from settings import * 
-
+# Tiles that make the maps
 class Tile(pygame.sprite.Sprite):
     def __init__(self,pos):
         super().__init__()
